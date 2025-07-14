@@ -71,13 +71,6 @@ const Header = () => {
             Toppings
           </a>
           <a
-            href="#tips"
-            className="hover:text-pink-500 transition"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Tips
-          </a>
-          <a
             href="#contact"
             className="hover:text-pink-500 transition"
             onClick={() => setIsMenuOpen(false)}

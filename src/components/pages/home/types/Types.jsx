@@ -1,37 +1,22 @@
-import React from "react";
+import React from 'react'
+import CardType from '../../../partials/CardType'
 
 const Types = () => {
   return (
     <>
-      {/* Types */}
-      <section className="bg-pink-100 py-20">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div>
-            <h1 className="font-bold text-4xl ml-10">
-              Discover the{" "}
-              <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Joy
-              </span>{" "}
-              of Milk Tea
-            </h1>
-            <p className="my-5">
-              Creamy, sweet, and refreshing our milk tea will transport you to
-              flavor paradise with every sip.
-            </p>
-            <button className="flex justify-center items-center bg-pink-500 px-6 py-2 size-fit rounded-full text-white font-bold">
-              Explore Flavors
-            </button>
-          </div>
-          <div className="relative">
-            <div className="backdrop-opacity-10 blur-lg rounded-full w-44 h-44 p-6 bg-pink-200"></div>
-            <span className=" text-8xl -top-16 absolute flex justify-center items-center">
-              🧋
-            </span>
+       {/* Types */}
+       <section id='types' className="bg-white py-16" >
+        <div className="container mx-auto px-4 py-4">
+          <h3 className="font-bold text-2xl text-center ">Popular <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Milk Tea</span> Types</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-10">
+              <CardType background={"bg-pink-200"} icon={"🥛"} type={"Classic Milk Tea"} description={"The original blend of black tea, milk, and sweetness that started it all."}/>
+              <CardType background={"bg-purple-200"} icon={"🍯"} type={"Honeydew Milk Tea"} description={"Refreshing melon flavor combined with creamy milk for a summer favorite."}/>
+              <CardType background={"bg-yellow-100"} icon={"🍵"} type={"Matcha Milk Tea"} description={"Earthy green tea powder blended with milk for an antioxidant boost."}/>
           </div>
         </div>
-      </section>
+       </section>
     </>
-  );
-};
+  )
+}
 
-export default Types;
+export default Types
