@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       {/* Contact */}
       <section id="contact" className="bg-pink-100 py-16">
-        <div className="mx-auto px-28">
+        <div className="mx-auto px-4">
           <div className="text-center">
             <h3 className="font-bold text-2xl mb-5">
               Get Your{" "}
@@ -19,7 +19,7 @@ const Contact = () => {
               hear from you!
             </p>
           </div>
-          <div className="bg-white p-5 rounded-lg mt-5">
+          <div className="bg-white p-5 rounded-lg mt-5  lg:mx-44 xl:mx-60  ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               <div className="">
                 <p className="mb-3">Your Name</p>
